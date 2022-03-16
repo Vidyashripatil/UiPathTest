@@ -1,12 +1,11 @@
 {
-  "name": "Tx_HyperAutomation_Project",
+  "name": "LSC_TestAutomation",
   "description": "Test Automation Project",
   "main": "Main.xaml",
   "dependencies": {
     "DevOps-Azure.Activities": "[1.0.3]",
-    "Microsoft.TeamFoundationServer.Client": "[16.199.0-preview]",
+    "Microsoft.TeamFoundationServer.Client": "16.170.0",
     "ReporterForUiPath.Activities": "[2.0.0]",
-    "UiPath.Azure.Activities": "[1.3.0-preview]",
     "UiPath.Database.Activities": "[1.5.0]",
     "UiPath.Excel.Activities": "[2.12.0-preview]",
     "UiPath.Jira.Activities": "[2.2.0]",
@@ -66,7 +65,7 @@
         "fileName": "Main.xaml"
       }
     ],
-    "modernBehavior": false
+    "modernBehavior": true
   },
   "expressionLanguage": "CSharp",
   "isTemplate": false,

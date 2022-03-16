@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="AzureDevopsUtil" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:daa="clr-namespace:DevOps.Azure.Activities;assembly=DevOps.Azure.Activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:usa="clr-namespace:UiPath.Shared.Activities;assembly=DevOps.Azure.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="AzureDevopsUtil" this:AzureDevopsUtil.BugTitle="demo" this:AzureDevopsUtil.Comments="demo" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:daa="clr-namespace:DevOps.Azure.Activities;assembly=DevOps.Azure.Activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:usa="clr-namespace:UiPath.Shared.Activities;assembly=DevOps.Azure.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="BugTitle" Type="InArgument(x:String)" />
     <x:Property Name="Comments" Type="InArgument(x:String)" />
@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>883.333333333333,469.333333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>646,467</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>AzureDevopsUtil_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
@@ -74,25 +74,25 @@
       <AssemblyReference>UiPath.Azure</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AzureDevopsUtil" sap:VirtualizedContainerService.HintSize="476,404.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AzureDevopsUtil" sap:VirtualizedContainerService.HintSize="476,402" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <daa:DevOpsApplicationScope ContinueOnError="{x:Null}" DisplayName="DevOps Application Scope" sap:VirtualizedContainerService.HintSize="434,312.666666666667" sap2010:WorkflowViewState.IdRef="DevOpsApplicationScope_1" OrganizationName="Testingxperts1" PersonalAccessToken="msp4tp2i5oftk5jv7ahcrxzf7npd3x652eo5evmggetyvfguf7va" Uri="https://dev.azure.com/">
+    <daa:DevOpsApplicationScope ContinueOnError="{x:Null}" DisplayName="DevOps Application Scope" sap:VirtualizedContainerService.HintSize="434,310" sap2010:WorkflowViewState.IdRef="DevOpsApplicationScope_1" OrganizationName="vidyashreepatil" PersonalAccessToken="2gvsumnt4ha7r2zmwaiy6qkmyactmvquijzx5w7q7gd7wf256heq" Uri="https://dev.azure.com/vidyashreepatil/">
       <daa:DevOpsApplicationScope.Body>
         <ActivityAction x:TypeArguments="usa:IObjectContainer">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="usa:IObjectContainer" Name="ScopeActivity" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,226.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,224" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <daa:CreateBug AssignedTo="{x:Null}" CompletedWork="{x:Null}" ContinueOnError="{x:Null}" OriginalEstimate="{x:Null}" RemainingWork="{x:Null}" ReproSteps="{x:Null}" ResponseJSON="{x:Null}" StoryPoints="{x:Null}" SystemInfo="{x:Null}" Tags="{x:Null}" ActivityType="None" Comments="[Comments]" DisplayName="Create Bug" sap:VirtualizedContainerService.HintSize="334,134.666666666667" sap2010:WorkflowViewState.IdRef="CreateBug_1" PriorityType="2" ProjectName="Tx_HyperAutomation" SeverityType="3 - Medium" Title="[BugTitle]" />
+            <daa:CreateBug AssignedTo="{x:Null}" CompletedWork="{x:Null}" ContinueOnError="{x:Null}" OriginalEstimate="{x:Null}" RemainingWork="{x:Null}" ReproSteps="{x:Null}" ResponseJSON="{x:Null}" StoryPoints="{x:Null}" SystemInfo="{x:Null}" Tags="{x:Null}" ActivityType="None" Comments="[Comments]" DisplayName="Create Bug" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="CreateBug_1" PriorityType="2" ProjectName="Tx_HyperAutomation" SeverityType="3 - Medium" Title="[BugTitle]" />
           </Sequence>
         </ActivityAction>
       </daa:DevOpsApplicationScope.Body>
