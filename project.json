@@ -20,7 +20,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "21.10.4.0",
-  "projectVersion": "1.0.100531908",
+  "projectVersion": "1.0.101135394",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -63,6 +63,11 @@
         "editingStatus": "Publishable",
         "testCaseId": "e41df2d0-5f45-4b75-a175-d664e92d68c4",
         "fileName": "Main.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e8846dff-e1ef-469b-a578-bc05979f9b9e",
+        "fileName": "Tests\\SpotQuoteBuilder\\TestCase.xaml"
       }
     ],
     "modernBehavior": true
